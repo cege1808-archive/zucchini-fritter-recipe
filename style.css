@@ -1,0 +1,242 @@
+*{
+	font-family: Perpetua, monospace;
+}
+
+/*---------HOMEPAGE-------------*/
+
+#home {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(fritter4-done.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	height:100%;
+	text-align: center;
+
+}
+
+#home .row{
+	background-color: rgba(0,0,0, 0.2);
+	
+}
+
+#home h1{
+	color:white;
+	padding-top: 20%;
+	font-size: 70px;
+	text-shadow: 2px 2px black;
+}
+
+#home h4 {
+	color:white;
+	text-shadow: 1px 1px black;
+}
+
+#home a{
+	transition: 0.5s ease;
+}
+
+.button {
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 10px;
+	background-color: #78B400;
+	border:none;
+	color:white;
+	text-align: center;
+	font-size: 18px;
+	padding:12px;
+	width:120px;
+	transition: all 0.5s;
+	margin:20px;
+	box-shadow: 0 3px 0 0 #527A00;
+}
+
+
+.button span{
+	display: inline-block;
+	vertical-align: middle;
+  	position: relative;
+  	transition: 0.5s;
+  	color:white;
+}
+
+.button span:after {
+	content:'»';
+	position:absolute;
+	opacity: 0;
+	top:0;
+	right:-30px;
+	transition: 0.5s;
+	color:white;
+	vertical-align: middle;
+}
+
+.button:hover span{
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity:1;
+	right:5;
+}
+
+
+/*---------SLIDESHOW-------------*/
+
+#slideshow{
+	background-color: white;
+	margin:0px;
+	padding: 0px;
+}
+
+#slideshow h3{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+#slideshow span{
+	padding: 20px;
+	padding-top: 0px;
+}
+
+#image_carousel{
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 23px;
+}
+
+.carousel-inner > .item >img,
+.carousel-inner > .item > a > img{
+	width:100%;
+}
+
+.carousel-control.right,
+.carousel-control.left{
+	background-image:none !important;
+}
+
+
+
+/*---------RECIPE-------------*/
+
+#recipe{
+	background-color: white;
+	padding: 0px;
+	margin-top: 50px;
+	margin-bottom: 130px;
+}
+
+#tabs-centre{
+	background:transparent;
+	border:none;
+}
+
+#tabs-centre .ui-widget-header{
+	background:transparent;
+	border:none;
+	border-bottom: 1px solid #c0c0c0;
+	-moz-border-radius: 0px; 
+    -webkit-border-radius: 0px; 
+    border-radius: 0px; 
+}
+
+#tabs-centre .ui-tabs-nav .ui-state-default{
+	background: transparent; 
+    border: none; 
+
+} 
+
+#tabs-centre .ui-tabs-nav {
+  height: 6.1%;
+  text-align: center;
+}
+#tabs-centre .ui-tabs-nav li {
+    display: inline-block;
+    float: none;
+    margin: 0px;
+
+}  
+
+#tabs-centre .ui-tabs-nav .ui-state-active{
+	background: transparent url(uiTabsArrow.png) no-repeat bottom center;  
+    border: none; 
+} 
+
+#tabs-centre .ui-tabs-nav .ui-state-default a { 
+    color: #c0c0c0; 
+} 
+#tabs-centre .ui-tabs-nav .ui-state-active a { 
+    color: #78B400; 
+}
+
+
+#ingredients li{
+	list-style: none;
+	padding: 8px;
+	display: -webkit-flex;
+  	display: flex;
+  	margin-left: 30%;
+ 
+}
+
+
+#directions li{
+	padding: 8px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+/*Checkboxes*/
+input[type="checkbox"] { 
+	display: none; 
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { 
+	margin-bottom: 0; 
+}
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid green;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
