@@ -1,0 +1,133 @@
+<DOCTYPE! html>
+
+<html>
+
+<head>
+	<title>Zucchini Fritters</title>
+
+	<link type="text/css" rel="stylesheet" href="style.css" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+
+ 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+ 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  	<script type="text/javascript" src="script.js"></script>
+
+	<meta charset=UTF-8>
+	<meta name="viewport" content="width=device-width, 
+					initial-scale=1.0
+					maximum-scale=1.0
+					user-scalable=no">
+</head>
+
+
+<body>
+	
+	<div id="home" class="jumbotron">
+		<div class="row">
+			<div>
+			<h1>Zucchini Fritters</h1>
+			<h4> Yield: 14 Fritters &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Prep Time: 20 min &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	Cook Time: 5 min </h3>
+			</div>
+
+			<a href="#slideshow" class="button"><span>RECIPE</span></a>
+		</div>
+	</div>
+
+	<div id="slideshow" class="jumbotron">
+		<div class = "row">
+			<h3>RECIPE</h3>
+			<span class="glyphicon glyphicon-eye-close col-xs-1 col-xs-offset-9 eye" id="close"></span>
+			<span class="glyphicon glyphicon-picture col-xs-1 col-xs-offset-9 eye" id="open"></span>
+
+			<div class="container">
+				<div id="image_carousel" class="carousel slide" data-ride="carousel">
+					<!--Indicators-->
+					<ol class="carousel-indicators">
+						<li data-target="#image_carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#image_carousel" data-slide-to="1"></li>
+						<li data-target="#image_carousel" data-slide-to="2"></li>
+						<li data-target="#image_carousel" data-slide-to="3" ></li>
+					</ol>
+					<!--Wrapper-->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active" id="shredded">
+							<img src="fritter1-shredded.jpg"/>
+						</div>
+						<div class="item">
+							<img src="fritter2-mix.jpg"/>
+						</div>
+						<div class="item">
+							<img  src="fritter3-fry.jpg"/>
+						</div>
+						<div class="item" id="done">
+							<img src="fritter4-done.jpg"/>
+						</div>
+					</div>
+					<!--Controls-->
+					<a href="#image_carousel" class="left carousel-control" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+						<span class="sr-only">Previous</span>
+					</a>
+
+					<a href="#image_carousel" class="right carousel-control" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+				
+			</div>
+		</div>
+	</div>
+
+	
+	<div id="recipe" class="jumbotron" >
+		<div class = "row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div id="tabs-centre">
+					<ul>
+						<li><a href="#ingredients">Ingredients</a></li>
+						<li><a href="#directions">Directions</a></li>
+					</ul>
+
+					<div id="ingredients" >
+						<ul id="shoppinglist">
+							<li><input type="checkbox" name="checkbox" id="item1"><label for="item1"> &nbsp; 4 cups shredded zucchini</label></li>
+
+							<li><input type="checkbox" name="checkbox" id="item2"><label for="item2"> &nbsp; 2/3 cup all-purpose flour</label></li>
+
+							<li><input type="checkbox" name="checkbox" id="item3"><label for="item3"> &nbsp; 2 large eggs, lightly beaten</label></li>
+
+							<li><input type="checkbox" name="checkbox" id="item4"><label for="item4"> &nbsp; 1/3 cup sliced scallions (green and white parts)</label></li>
+
+							<li><input type="checkbox" name="checkbox" id="item5"><label for="item5"> &nbsp; Vegetable oil</label></li>
+							<li><input type="checkbox" name="checkbox" id="item6"><label for="item6"> &nbsp; Sour cream, for serving (optional)</label></li>
+						</ul>
+					</div>
+					
+					<div id="directions">
+						<ol>
+							<li>Place the shredded zucchini in a colander set over a bowl and sprinkle the zucchini lightly with salt. Allow the zucchini to stand for 10 minutes. Using your hands, squeeze out as much liquid from the zucchini as possible. Transfer the zucchini to a large bowl.</li>
+							<li>Add the flour, eggs, sliced scallions, 1/4 teaspoon salt and 1/8 teaspoon pepper to the bowl, stirring until the mixture is combined. Line a plate with paper towels.</li>
+							<li>Liberally coat the bottom of a large sauté pan with vegetable oil and place it over medium-high heat. Once the oil is hot, scoop 3-tablespoon mounds of the zucchini mixture into the pan, pressing them lightly into rounds and spacing them at least 2 inches apart. Cook the zucchini fritters for 2 to 3 minutes, then flip them once and cook an additional 2 minutes until golden brown and cooked throughout. Transfer the zucchini fritters to the paper towel-lined plate and immediately sprinkle them with salt. Repeat the scooping and cooking process with the remaining zucchini mixture.</li>
+							<li>Serve the zucchini fritters topped with sour cream (optional) and sliced scallions.</li>
+
+						</ol>
+					</div>
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+
+<!-- Recipe by Kelly Senyei of Just a Taste. Please do not reprint this recipe without my permission. If you'd like to feature this recipe on your site, please rewrite the method of preparation and link to this post as the original source.
+LINK: http://www.justataste.com/5-ingredient-zucchini-fritters-recipe/-->
+
+
+</html>
