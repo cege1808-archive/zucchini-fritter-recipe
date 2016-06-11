@@ -1,0 +1,255 @@
+*{
+  font-family: Perpetua, monospace;
+}
+
+
+/*---------HOMEPAGE-------------*/
+
+
+#home, #shade{
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -10px;
+  padding-right: 30px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:600px;
+  width:100%;
+}
+
+#home {
+  background-image: url(fritter4-done.jpg);
+  text-align: center;
+}
+
+
+#shade{
+  background-color: rgba(0,0,0, 0.2); 
+}
+
+#home table{
+  width:60%;
+  margin-right: 20%;
+  margin-left:20%;
+}
+
+#home table{
+  /*border: 4px solid red; */
+  border-collapse: collapse;
+  padding-top: 2px;
+  margin-bottom: 80px;
+}
+
+#home td{
+  padding-top: 10px;
+  text-align:center;
+}
+
+#home h1{
+  color:white;
+  padding-top: 20%;
+  margin: 0px;
+  font-size: 70px;
+  text-shadow: 2px 2px black;
+}
+
+#home h4 {
+  color:white;
+  font-weight: 200;
+  text-decoration: none;
+  text-shadow: 1px 1px black;
+}
+
+#home a{
+  transition: 0.5s ease;
+}
+
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 10px;
+  background-color: #78B400;
+  border:none;
+  color:white;
+  text-align: center;
+  font-size: 18px;
+  padding:12px;
+  width:120px;
+  transition: all 0.5s;
+  margin:20px;
+  box-shadow: 0 3px 0 0 #527A00;
+}
+
+
+.button span{
+  display: inline-block;
+  vertical-align: middle;
+    position: relative;
+    transition: 0.5s;
+    color:white;
+}
+
+.button span:after {
+  content:'»';
+  position:absolute;
+  opacity: 0;
+  top:0;
+  right:-30px;
+  transition: 0.5s;
+  color:white;
+  vertical-align: middle;
+}
+
+.button:hover span{
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity:1;
+  right:5;
+}
+
+
+/*---------SLIDESHOW-------------*/
+
+#slideshow{
+  background-color: white;
+  margin:0px;
+  padding: 0px;
+}
+
+#slideshow h3{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+#close img{
+  height:20px;
+}
+
+#open img{
+  height: 15px;
+}
+
+#slideshow table{
+  width: 100%;
+}
+
+/*
+#slideshow table, #slideshow td,  #slideshow tr{
+  border: 1px solid red;*/
+
+
+.carousel {
+  text-align: center;
+  position:relative;
+  width: 100%;
+  margin:0px;
+  padding: 0px;
+}
+
+.carousel div{
+  display: inline-block;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+#prev img, #next img{
+  height: 30px;
+}
+
+/*---------RECIPE-------------*/
+
+#recipe{
+  background-color: white;
+  padding: 0px;
+  margin-top: 50px;
+  margin-bottom: 130px;
+}
+
+#recipe table{
+  width: 100%;
+}
+
+/*
+#recipe table, #recipe td, #recipe tr{
+  border: 1px solid blue;
+}
+*/
+
+#ingredients_tab p{
+  text-align: right;
+}
+
+#recipe table p{
+  padding: 5px;
+}
+
+#ingredients li{
+  list-style: none;
+  padding: 8px;
+  display: -webkit-flex;
+    display: flex;
+  margin-left: 30%;
+}
+
+
+#directions li{
+  padding: 8px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+
+/*Checkboxes*/
+input[type="checkbox"] { 
+  display: none; 
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { 
+  margin-bottom: 0; 
+}
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid green;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
